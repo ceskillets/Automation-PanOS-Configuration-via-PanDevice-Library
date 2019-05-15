@@ -1,0 +1,24 @@
+
+name: pandevice-example
+label: pandevice-example
+description: Example of using the PanDevice library to configure a firewall.
+type: python
+extends:
+
+variables:
+  - name: panos_hostname
+    description: PAN-OS Hostname
+    default: 192.168.55.10
+    type_hint: text
+  - name: panos_username
+    description: PAN-OS Username
+    default: admin
+    type_hint: text
+  - name: panos_password
+    description: PAN-OS Password
+    default: paloalto
+    type_hint: password
+
+snippets:
+  - name: script
+    file: script.py
