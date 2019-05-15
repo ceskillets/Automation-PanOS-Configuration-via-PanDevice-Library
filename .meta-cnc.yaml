@@ -1,9 +1,12 @@
 
-name: pandevice-example
-label: pandevice-example
+name: PanDevice Example
+label: PanDevice Example
 description: Example of using the PanDevice library to configure a firewall.
 type: python3
 extends:
+
+labels:
+  collection: Automation CE Team
 
 variables:
   - name: hostname
