@@ -224,6 +224,8 @@ def cli(hostname, username, password):
         configure_network(device)
         configure_policy(device)
 
+        device.commit(sync=True)
+
     except PanDeviceError as e:
         click.echo('PanDeviceError: {}'.format(e))
 
